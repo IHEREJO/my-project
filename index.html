@@ -1,4 +1,104 @@
-# IHEREJO my project;
-b iyf
-assdad
-boy gpt007
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBTVC Online Research</title>
+    <link rel="stylesheet" href="SRS.css">
+    
+    <meta name="description" content="วิทยาลัยอาชีวศึกษาเทคโนโลยีฐานวิทยาศาสตร์(ชลบุรี)">
+    <meta name="keywords" content="SSRS, ระบบ, เว็บไซต์, GitHub Pages">
+    <meta name="author" content="Tanawich Chanchot">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://www.sbtvc.ac.th/wp-content/uploads/2024/08/logo_sbtvc.png" alt="SBTVC Logo">
+            <h1>SBTVC Online Research<br>วิทยาลัยอาชีวศึกษาเทคโนโลยีฐานวิทยาศาสตร์ (ชลบุรี)</h1>
+        </div>
+        <nav class="menu">
+            <button>หน้าหลัก</button>
+            <button>ค้นหา</button>
+            <a href="Admin.html">
+                <button>Admin</button>
+            </a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>เมนูหลัก</h3>
+            <ul>
+                <li>หน้าหลัก</li>
+                <li>ค้นหางานวิจัย</li>
+            </ul>
+
+            <h3>หมวดหมู่</h3>
+            <ul>
+                <li class="dropdown">
+                    สาขาวิชา
+                    <ul class="dropdown-content">
+                        <li class="dropdown">
+                            ไฟฟ้า
+                            <ul class="dropdown-content">
+                                <li data-url="f.html">เทคโนโลยีไฟฟ้า</li>
+                                <li>เทคโนโลยีไฟฟ้าและะพลังงานทางเลือก</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                           อิเล็กทรอนิกส์
+                            <ul class="dropdown-content">
+                                <li >เทคโนโลยีอิเล็กทรอนิกส์</li>
+                                <li >เทคโนโลยีอิเล็กทรอนิกส์อัจฉริยะ</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                           คอมพิวเตอร์
+                            <ul class="dropdown-content">
+                                <li >เทคโนโลยีสารสนเทศ</li>
+                                <li >เทคโนโลยีคอมพิวเตอร์และสารสนเทศ</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            เมคคาทรอนิกส์
+                            <ul class="dropdown-content">
+                                <li>เทคโนโลยีเมคคาทรอนิกส์</li>
+                                <li>เทคโนโลยีเมคคาทรอนิกส์และระบบควบคุมอัติโนมัติ</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    ปีงานวิจัย
+                    <ul class="dropdown-content">
+                        <li data-url="data.html">พ.ศ. 2564</li>
+                        <li >พ.ศ. 2565</li>   
+                        <li>พ.ศ. 2566</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    ระดับผลงาน 
+                    <ul class="dropdown-content">
+                        <li> ระดับจังหวัด</li>
+                        <li> ระดับภาค</li>
+                        <li>ระดับชาติ</li>
+                        <li data-url="data.html">ระดับนานาชาติ</li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <script>
+    document.querySelectorAll('.dropdown-content li').forEach(item => {
+        item.addEventListener('click', function() {
+            let url = this.getAttribute('data-url');  // ดึง URL จาก data-url
+            if (url) {
+                window.location.href = url;  // เปลี่ยนหน้า
+            }
+        });
+    });
+    </script>
+</body>
+</html>
